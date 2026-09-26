@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #0A1020, #0D1B33);
+    color: #f2f5fc;
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.5;
+}
+
+.wrap{
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 56px 24px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.grad{
+    background: linear-gradient(90deg, #38BDF8, #2563EB); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.in-badge{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.9em;
+    height: 0.9em;
+    border-radius: 22%;
+    background: linear-gradient(135deg, #38bdf8, #2563EB);
+    color: #fff;
+    font-size: 0.62em;
+    font-weight:800;
+}
+
+.lede {
+    color: #93A0C2;
+    font-size: 15px;
+    margin-top: 10px;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.card{
+    background: #0F1B30;
+    border: 1px solid rgba(88, 150, 255, 0.28);
+    box-shadow: 0 0 0 1px rgba(88, 150, 255, 0.18);
+    border-radius: 28px;
+    padding: 32px 28px;
+}
+
+input[type="text"], textarea {
+   font-family: 'Inter', sans-serif;
+   font-size: 14.5px;
+   color: #f2f5fc;
+   background: #101B30;
+   border-radius: 16px;
+   padding: 14px 18px;
+   outline: none;
+   width: 100%;
+}
+
+textarea{
+    resize: vertical;
+    min-height: 78px;
+    font-family: inherit;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #F2F5FC;
+  -webkit-box-shadow: 0 0 0 1000px #101B30 inset;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+button.primary{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #fff;
+    background: linear-gradient(90deg, #2563EB, #38bdf8);
+    border: none;
+    border-radius: 999px;
+    padding: 16px 22px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 12px 28px -8px rgba(37, 99, 235, 0.65);
+}
+
+button.primary:hover{
+    filter: brightness(1.08);
+}
+
+fieldset{
+    border:none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+legend{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.tone-group{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.tone-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 1px solid #22345A;
+    border-radius: 14px;
+    padding: 10px 8px;
+    font-size: 12.5px;
+    color: #93A0C2;
+    cursor: pointer;
+}
+
+.tone-option input{
+    accent-color: #38BDF8;
+}
+
+.tone-option:has(input:checked) {
+    border-color: #38BDF8;
+    color: #fff;
+    background: linea-gradient(134deg, rgba(37, 99,235,0.35), rgba(56,189,248,0.20));
+    font-weight: 700;
+}
+
+#resultado{
+    margin: top 20px;
+}
+
+.card-label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #38BDF8;
+    margin-bottom: 14px;
+}
+
+#resultado p:last-child{
+    color: #93A0C2;
+    font-size: 14px ;
+}

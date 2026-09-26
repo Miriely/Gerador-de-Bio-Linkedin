@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Bio para Linkedin</title>
+
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<script src="src/config.js"></script>
+<script src="src/index.js"></script>
+
+<body>
+
+    <div class="wrap">
+
+    <header class="hero">
+        <h1>Gerador de Bio <span class="grad">Profissional</span></h1> 
+        <h1>Para <span class="grad">Linked</span><span class="in-badge">in</span></h1>
+        <p class="lede">Preencha seus dados e receba uma Bio pronta em segundos</p> 
+    </header>
+
+    <section class="card">
+        <form id="bioForm">
+            <div>
+                <label for="profissao">Qual é a sua profissão atual?</label>
+                <input type="text" id="profissao" name="profissao">
+            </div>
+
+            <div> 
+                <label for="experiencia">Conte-nos mais sobre a sua experiência profissional:</label>
+                <textarea id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <div>
+                <label for="conquistas">Conquistas ou diferenciais:</label>
+                <textarea id="conquistas" name="conquistas" ></textarea>
+            </div>
+
+            <fieldset>
+                <legend>Tom de voz</legend>
+                
+                <div class="tone-group">
+                    <label class="tone-option">
+                        <input type="radio" name="tom" value="profissional" checked >
+                        Profissional
+                    </label>
+
+                    <label class="tone-option">
+                        <input type="radio" name="tom" value="acessivel">
+                        Acessível
+                    </label>
+
+                    <label class="tone-option">
+                        <input type="radio"     name="tom" value="ousado">
+                        Ousado
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="primary">Gerar bio profissional</button>
+        </form>
+    </section>
+
+    <section class="card" id="resultado">
+        <p class="card-label">Sua bio</p>
+        <p>Sua bio vai aparecer aqui.</p>
+    </section>
+
+    </div>
+
+    
+</body>
+</html>
